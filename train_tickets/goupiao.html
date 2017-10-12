@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- 变化  -->
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/goupiao.css" />
+
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-datetimepicker.min.js"></script>
+		<script src="js/style.js"></script>
+		<script src="js/xs-style.js"></script>     <!-- 变化  -->
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="bg-con col-sm-12 hidden-xs">       <!--变化-->
+				<div class="con-main-mid">
+				<div class="con-left-pattern col-sm-2">
+					<ul class="con-left-ul">
+						<li class="btn con-left-ul-li-active">
+							<div class="con-left-ul-logo qichepiao"><img src="img/goupiao-logo-9.png"></div>
+							<div class="con-left-ul-name">汽车票</div>
+						</li>
+						<li class="btn">
+							<div class="con-left-ul-logo huochepiao"><img src="img/goupiao-logo-2.png"></div>
+							<div class="con-left-ul-name">火车票</div>
+						</li>
+						<li class="btn">
+							<div class="con-left-ul-logo"><img src="img/goupiao-logo-3.png"></div>
+							<div class="con-left-ul-name">飞机票</div>
+						</li>
+						<li class="btn">
+							<div class="con-left-ul-logo"><img src="img/goupiao-logo-4.png"></div>
+							<div class="con-left-ul-name">订酒店</div>
+						</li>
+						
+					</ul>
+				</div>
+
+				<div class="con-right-pattern col-sm-10">
+					<div class="con-inputgroup-leftdiv ">
+						<ul class="bus-ul">
+							<div class="col-sm-12 bus-div">
+								<input type="radio" checked/>单程
+								<input type="radio" />往返
+								<input type="radio" />联程
+							</div>
+							<li>
+								<input type="text" class="chufa-place form-control" placeholder="出发地" />
+								<div class="chufa-focus"></div>
+							</li>
+							<li>
+								<input type="text" class="date form-control" placeholder="出发日期" />
+							
+							</li>
+							<li>
+								<input type="text" class="mudi-place form-control" placeholder=" 目的地" />
+								<div class="mudi-focus"></div>
+							</li>
+						</ul>
+
+						<ul class="train-ul">
+							<li>
+								<input type="text" class="chufa-place form-control" placeholder="出发地" />
+								<div class="chufa-focus">
+									<div class="chufa-focus-title">热门城市</div>
+									<table class="chufa-focus-table">
+										<tr>
+											<td class="btn">北京</td>
+											<td class="btn">上海</td>
+											<td class="btn">成都</td>
+											<td class="btn">重庆</td>
+											<td class="btn">南京</td>
+										</tr>
+										<tr>
+											<td class="btn">广州</td>
+											<td class="btn">兰州</td>
+											<td class="btn">深圳</td>
+											<td class="btn">杭州</td>
+											<td class="btn">天津</td>
+										</tr>
+										<tr>
+											<td class="btn">福州</td>
+											<td class="btn">香港</td>
+											<td class="btn">澳门</td>
+											<td class="btn">长沙</td>
+											<td class="btn">郑州</td>
+										</tr>
+										<tr>
+											<td class="btn">合肥</td>
+											<td class="btn">沈阳</td>
+											<td class="btn">长春</td>
+											<td class="btn">太原</td>
+											<td class="btn">银川</td>
+										</tr>
+										<tr>
+											<td class="btn">西宁</td>
+											<td class="btn">昆明</td>
+											<td class="btn">青岛</td>
+											<td class="btn">大连</td>
+											<td class="btn">西安</td>
+										</tr>
+									</table>
+								</div>
+							</li>
+							<li>
+								<input type="text" class="date form-control reg-birth text" placeholder="出发日期" />
+								
+							</li>
+							<li>
+								<input type="text" class="mudi-place form-control" placeholder=" 目的地" />
+								<div class="mudi-focus">
+									<div class="mudi-focus-title">热门城市</div>
+									<table class="mudi-focus-table">
+										<tr>
+											<td class="btn">北京</td>
+											<td class="btn">上海</td>
+											<td class="btn">成都</td>
+											<td class="btn">重庆</td>
+											<td class="btn">南京</td>
+										</tr>
+										<tr>
+											<td class="btn">广州</td>
+											<td class="btn">兰州</td>
+											<td class="btn">深圳</td>
+											<td class="btn">杭州</td>
+											<td class="btn">天津</td>
+										</tr>
+										<tr>
+											<td class="btn">福州</td>
+											<td class="btn">香港</td>
+											<td class="btn">澳门</td>
+											<td class="btn">长沙</td>
+											<td class="btn">郑州</td>
+										</tr>
+										<tr>
+											<td class="btn">合肥</td>
+											<td class="btn">沈阳</td>
+											<td class="btn">长春</td>
+											<td class="btn">太原</td>
+											<td class="btn">银川</td>
+										</tr>
+										<tr>
+											<td class="btn">西宁</td>
+											<td class="btn">昆明</td>
+											<td class="btn">青岛</td>
+											<td class="btn">大连</td>
+											<td class="btn">西安</td>
+										</tr>
+									</table>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="plane-ul">
+							<div class="col-sm-12 plane-div">
+								<input type="radio" checked/>单程
+								<input type="radio" />往返
+								<input type="radio" />联程
+							</div>
+							<li>
+								<input type="text" class="chufa-place form-control" placeholder="出发地" />
+								<div class="chufa-focus"></div>
+							</li>
+							<li>
+								<input type="text" class="date form-control" placeholder="出发日期" />
+								
+							</li>
+							<li>
+								<input type="text" class="mudi-place form-control" placeholder=" 目的地" />
+								<div class="mudi-focus"></div>
+							</li>
+						</ul>
+
+						<ul class="hotel-ul">
+							<li>
+								<input type="text" class="chufa-place form-control" placeholder="入住日期" />
+								<div class="chufa-focus"></div>
+							</li>
+							<li>
+								<input type="text" class="date form-control" placeholder="退房日期" />
+								
+							</li>
+							<li>
+								<input type="text" class="mudi-place form-control" placeholder="目的地" />
+								<div class="mudi-focus"></div>
+							</li>
+							<div class="hotel-place input-group">
+								<input type="text" class=" form-control" placeholder="搜索酒店名称" />
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-search"></span>
+								</span>
+							</div>
+						</ul>
+
+						<a class="goupiao-con-search btn col-sm-3 btn-info" href="list.html">搜索</a>
+
+					</div>
+
+				</div>
+
+			
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+				<div class="bg-con-xs  col-sm-12 hidden-sm hidden-lg hidden-md">
+					<div class="con-xs-title col-xs-12">
+						<label>车票预定</label>
+					</div>
+					<div class="con-xs-service col-xs-12">
+						<ul class="con-xs-service-ul">
+							<li>
+								<div class="con-xs-service-img"><img src="img/con-xs-goupiao-1.png"></div>
+								<p>正晚点</p>
+							</li>
+							<li>
+								<div class="con-xs-service-img"><img src="img/con-xs-goupiao-2.png"></div>
+								<p>温馨服务</p>
+							</li>
+							<li>
+								<div class="con-xs-service-img"><img src="img/con-xs-goupiao-3.png"></div>
+								<p>起售时间</p>
+							</li>
+							<li>
+								<div class="con-xs-service-img"><img src="img/con-xs-goupiao-4.png"></div>
+								<p>约车</p>
+							</li>
+						</ul>
+					</div>
+					<div class="con-xs-place col-xs-12">
+						
+						<input type="text" class="chufa-place form-control" placeholder="出发地" />
+								<div class="chufa-focus">
+									<div class="chufa-focus-title">热门城市</div>
+									<table class="chufa-focus-table">
+										<tr>
+											<td class="btn">北京</td>
+											<td class="btn">上海</td>
+											<td class="btn">成都</td>
+											<td class="btn">重庆</td>
+											<td class="btn">南京</td>
+										</tr>
+										<tr>
+											<td class="btn">广州</td>
+											<td class="btn">兰州</td>
+											<td class="btn">深圳</td>
+											<td class="btn">杭州</td>
+											<td class="btn">天津</td>
+										</tr>
+										<tr>
+											<td class="btn">福州</td>
+											<td class="btn">香港</td>
+											<td class="btn">澳门</td>
+											<td class="btn">长沙</td>
+											<td class="btn">郑州</td>
+										</tr>
+										<tr>
+											<td class="btn">合肥</td>
+											<td class="btn">沈阳</td>
+											<td class="btn">长春</td>
+											<td class="btn">太原</td>
+											<td class="btn">银川</td>
+										</tr>
+										<tr>
+											<td class="btn">西宁</td>
+											<td class="btn">昆明</td>
+											<td class="btn">青岛</td>
+											<td class="btn">大连</td>
+											<td class="btn">西安</td>
+										</tr>
+									</table>
+								</div>
+								
+								
+						<div class="xs-icon-change glyphicon glyphicon-random"></div>
+						
+						
+						<input type="text" class="mudi-place form-control" placeholder=" 目的地" />
+								<div class="mudi-focus">
+									<div class="mudi-focus-title">热门城市</div>
+									<table class="mudi-focus-table">
+										<tr>
+											<td class="btn">北京</td>
+											<td class="btn">上海</td>
+											<td class="btn">成都</td>
+											<td class="btn">重庆</td>
+											<td class="btn">南京</td>
+										</tr>
+										<tr>
+											<td class="btn">广州</td>
+											<td class="btn">兰州</td>
+											<td class="btn">深圳</td>
+											<td class="btn">杭州</td>
+											<td class="btn">天津</td>
+										</tr>
+										<tr>
+											<td class="btn">福州</td>
+											<td class="btn">香港</td>
+											<td class="btn">澳门</td>
+											<td class="btn">长沙</td>
+											<td class="btn">郑州</td>
+										</tr>
+										<tr>
+											<td class="btn">合肥</td>
+											<td class="btn">沈阳</td>
+											<td class="btn">长春</td>
+											<td class="btn">太原</td>
+											<td class="btn">银川</td>
+										</tr>
+										<tr>
+											<td class="btn">西宁</td>
+											<td class="btn">昆明</td>
+											<td class="btn">青岛</td>
+											<td class="btn">大连</td>
+											<td class="btn">西安</td>
+										</tr>
+									</table>
+								</div>
+					</div>
+					
+					<div class="con-xs-date col-xs-12">
+						<table class="table" rules="none">
+							<tr>
+								<td><p>出发日期</p></td>
+								<td><input type="text" class="date form-control reg-birth text" /></td>
+								<td><input type="checkbox">学生</td>
+							</tr>
+							<tr>
+								<td><p>出发时间</p></td>
+								<td><p>00:00 -- 24:00</p></td>
+							</tr>
+							<tr>
+								<td><p>席别</p></td>
+								<td><p>不限</p></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+				<div class="con-xs-trainType col-xs-12 hidden-sm hidden-md hidden-lg">
+					<button class="btn btn-info xs-trainType-btn">全部</button>
+					<ul class="xs-trainType-ul">
+						<li>G/D/C</li>
+						<li>Z字头</li>
+						<li>T字头</li>
+						<li>K字头</li>
+						<li>其他</li>
+					</ul>
+				</div>
+
+				<a class="goupiao-con-search btn col-sm-3 btn-info hidden-sm hidden-md hidden-lg" href="list.html">查&nbsp;&nbsp;&nbsp;询</a>
+
+				<div class="xs-goupiao-bottom-img col-xs-12 hidden-sm hidden-md hidden-lg">
+					<img src="img/con-xs-goupiao-bottom.png">
+				</div>
+				
+				<div class="xs-menu col-xs-12 hidden-sm hidden-md hidden-lg">
+					<ul class="xs-menu-ul">
+						<li style="background: #888888;"><a href="goupiao.html">车票预定</a></li>
+						<li><a href="imformation.html">订单查询</a></li>
+						<li><a>我的12306</a></li>
+					</ul>
+				</div>
+		</div>
+	</body>
+
+</html>

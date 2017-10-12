@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- 变化  -->
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/list.css" />
+
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-datetimepicker.min.js"></script>
+		<script src="js/style.js"></script>
+		<script src="js/xs-style.js"></script>    <!-- 变化  -->
+	</head>
+	<body>
+		<div id="header" class="hidden-xs">          <!-- 变化 -->
+			<div class="header-logo"><img src="img/logo.png"></div>
+			<div class="header-login-info">
+				<ul class="header-login-info-ul">
+					<li class="header-login-info-ul-li"><a class="btn" href="login.html">登陆</a></li>
+					<li class="header-login-info-ul-li"><a class="btn" href="regist.html">注册</a></li>
+					<li class="xiala-li">
+				<div class="dropdown">
+					<a class="btn" type="button" data-toggle="dropdown">
+						我的12306
+						<span class="caret"></span>
+					</a>
+					
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="imformation.html">已完成的订单</a></li>
+						<li><a href="imformation.html">未完成的订单</a></li>
+						<li class="divider"></li>
+						<li><a href="imformation.html">查看个人信息</a></li>
+						<li><a href="imformation.html">常用联系人</a></li>
+						<li class="divider"></li>
+						<li><a href="imformation.html">重点旅客预约</a></li>
+						<li><a href="imformation.html">遗失物品查找</a></li>
+						<li><a href="imformation.html">投诉</a></li>
+						<li><a href="imformation.html">建议</a></li>
+					</ul>
+				</div>
+					</li>
+				</ul>
+			</div>
+			<div class="header-im-nav">
+				<ul>
+					<li><a class="btn">客运首页</a></li>
+					<li><a class="btn">车票预定</a></li>
+					<li><a class="btn">余票查询</a></li>
+					<li><a class="btn">出行向导</a></li>
+					<li><a class="btn">信息服务</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="container center-block">
+			<div class="search-pattern col-sm-12  hidden-xs ">          <!-- 变化 -->
+				<div class="btn-radio-1 col-sm-1">
+					<input type="radio" checked />单程
+					<input type="radio" />往返
+				</div>
+				<div class="place-area col-sm-8">
+					<ul>
+						<li>
+							<span>出发地</span>
+							<div class="text-area"><input type="text" class="list-chufa-pattern form-control" /></div>
+							<div class="chufa-focus">
+									<div class="chufa-focus-title">热门城市</div>
+									<table class="chufa-focus-table">
+										<tr>
+											<td class="btn">北京</td>
+											<td class="btn">上海</td>
+											<td class="btn">成都</td>
+											<td class="btn">重庆</td>
+											<td class="btn">南京</td>
+										</tr>
+										<tr>
+											<td class="btn">广州</td>
+											<td class="btn">兰州</td>
+											<td class="btn">深圳</td>
+											<td class="btn">杭州</td>
+											<td class="btn">天津</td>
+										</tr>
+										<tr>
+											<td class="btn">福州</td>
+											<td class="btn">香港</td>
+											<td class="btn">澳门</td>
+											<td class="btn">长沙</td>
+											<td class="btn">郑州</td>
+										</tr>
+										<tr>
+											<td class="btn">合肥</td>
+											<td class="btn">沈阳</td>
+											<td class="btn">长春</td>
+											<td class="btn">太原</td>
+											<td class="btn">银川</td>
+										</tr>
+										<tr>
+											<td class="btn">西宁</td>
+											<td class="btn">昆明</td>
+											<td class="btn">青岛</td>
+											<td class="btn">大连</td>
+											<td class="btn">西安</td>
+										</tr>
+									</table>
+								</div>
+						</li>
+						<li>
+							<span>目的地</span>
+							<div class="text-area"><input type="text" class="list-mudi-pattern form-control" /></div>
+							<div class="mudi-focus">
+									<div class="mudi-focus-title">热门城市</div>
+									<table class="mudi-focus-table">
+										<tr>
+											<td class="btn">北京</td>
+											<td class="btn">上海</td>
+											<td class="btn">成都</td>
+											<td class="btn">重庆</td>
+											<td class="btn">南京</td>
+										</tr>
+										<tr>
+											<td class="btn">广州</td>
+											<td class="btn">兰州</td>
+											<td class="btn">深圳</td>
+											<td class="btn">杭州</td>
+											<td class="btn">天津</td>
+										</tr>
+										<tr>
+											<td class="btn">福州</td>
+											<td class="btn">香港</td>
+											<td class="btn">澳门</td>
+											<td class="btn">长沙</td>
+											<td class="btn">郑州</td>
+										</tr>
+										<tr>
+											<td class="btn">合肥</td>
+											<td class="btn">沈阳</td>
+											<td class="btn">长春</td>
+											<td class="btn">太原</td>
+											<td class="btn">银川</td>
+										</tr>
+										<tr>
+											<td class="btn">西宁</td>
+											<td class="btn">昆明</td>
+											<td class="btn">青岛</td>
+											<td class="btn">大连</td>
+											<td class="btn">西安</td>
+										</tr>
+									</table>
+								</div>
+						</li>
+						<li>
+							<span>出发日</span>
+							<div class="text-area"><input type="text" class="list-date-pattern form-control" /></div>
+						</li>
+					</ul>
+				</div>
+				
+				
+					<a href="" style="float: right;margin: 15px 3% 0 0; " class="btn btn-warning col-sm-1">查询</a>
+					<div class="btn-radio-2 col-sm-1">
+					<input type="radio" checked />普通
+					<input type="radio" />学生
+				</div>
+			</div>
+			
+			
+			
+			
+			<div class="search-box col-sm-12 hidden-xs">         <!-- 变化 -->
+				<div class="train-date col-sm-12">
+					<ul>
+						<li><a>06-01</a></li>
+						<li><a>06-02</a></li>
+						<li><a>06-03</a></li>
+						<li><a>06-04</a></li>
+						<li class="train-date-ul-li-active"><a>06-05</a></li>
+						<li><a>06-06</a></li>
+						<li><a>06-07</a></li>
+						<li><a>06-08</a></li>
+						<li><a>06-09</a></li>
+						<li style="width: 10.7% ;background:white;"><a>06-10</a></li>
+						<li><a>06-11</a></li>
+						<li><a>06-12</a></li>
+						<li><a>06-13</a></li>
+						<li><a>06-14</a></li>
+						<li><a>06-15</a></li>
+						<li><a>06-16</a></li>
+						<li><a>06-17</a></li>
+						<li><a>06-18</a></li>
+						<li><a>06-19</a></li>
+						<li><a>06-20</a></li>
+					</ul>
+				</div>
+				<div class="train-type col-sm-12">
+					车次类型：
+					<span><button class="type-all btn btn-info">全部</button></span>
+					<span><input type="checkbox"/>GC-高铁/动车</span>
+					<span><input type="checkbox" />D-动车</span>
+					<span><input type="checkbox" />Z-直达</span>
+					<span><input type="checkbox" />T-特快</span>
+					<span><input type="checkbox" />K-快速</span>
+					<span><input type="checkbox" />其他</span>
+				</div>
+				<div class="station-type col-sm-12">
+					出发车站：
+					<span><button class="station-all btn btn-info">全部</button></span>
+					<span><input type="checkbox"/>上海</span>
+					<span><input type="checkbox" />上海虹桥</span>
+				</div>
+			</div>
+			
+			<div class="main-list hidden-xs">           <!-- 变化 -->
+				<ul>
+						<table class="main-list-table table table-bordered table-striped">
+							<thead class="main-list-table-thead">
+								<td><a href="#" class="btn">车次</a></td>
+								<td><a href="#" class="btn">出发站</a><br clear="none"><a href="#">到达站</a></td>
+								<td><a href="#" class="btn">出发时间</a><br clear="none"><a href="#">到达时间</a></td>
+								<td><a href="#" class="btn">历时</a></td>
+								<td><a href="#" class="btn">商务座</a><br clear="none"><a href="#">特等座</a></td>
+								<td><a href="#" class="btn">一等座</a></td>
+								<td><a href="#" class="btn">二等座</a></td>
+								<td><a href="#" class="btn">高级软卧</a></td>
+								<td><a href="#" class="btn">软卧</a></td>
+								<td><a href="#" class="btn">动卧</a></td>
+								<td><a href="#" class="btn">硬卧</a></td>
+								<td><a href="#" class="btn">软座</a></td>
+								<td><a href="#" class="btn">硬座</a></td>
+								<td><a href="#" class="btn">无座</a></td>
+								<td><a href="#" class="btn">其他</a></td>
+								<td><a href="#" class="btn">备注</a></td>
+							</thead>
+						
+							<tbody>
+								<tr class="list-tr">
+								<td>
+									<div class="list-station">
+										<table class="list-station-table table ">
+											<thead class="list-station-table-thead">
+												<td>站序</td>
+												<td>站名</td>
+												<td>到站时间</td>
+												<td>出发时间</td>
+												<td>停留时间</td>
+											</thead>
+											
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>上海</td>
+													<td>--</td>
+													<td>06:39</td>
+													<td>--</td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>苏州北</td>
+													<td>08:20</td>
+													<td>08:22</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>无锡东</td>
+													<td>09:46</td>
+													<td>09:48</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>南京南</td>
+													<td>10:20</td>
+													<td>10:22</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>05</td>
+													<td>北京南</td>
+													<td>12:18</td>
+													<td>--</td>
+													<td>--</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="list-station-bottom-table">
+												<tr>
+													<td>G101</td>
+													<td>上海--->北京南</td>
+													<td>高速</td>
+													<td>有空调</td>
+												</tr>
+										</table>
+									</div>
+									<a class="btn list-tr-a">G101</a><span class="caret"></span>
+								</td>
+								<td><a>上海虹桥</a><br clear="none"><a>北京南</a></td>
+								<td><a>06:39</a><br clear="none"><a>12:18</a></td>
+								<td><a>05:49</a><br clear="none"><a>当日到达</a></td>
+								<td><a>12</a><br clear="none"><a>特等座</a></td>
+								<td><a>有</a></td>
+								<td><a>有</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a class="btn btn-info yuding" style="color: white;">预定</a></td>
+							</tr>
+							<tr class="price-tr">
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>￥1748.0</td>
+								<td>￥933.0</td>
+								<td>￥553.0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							</tbody>
+						
+							<tbody>
+								<tr class="list-tr">
+								<td>
+									</div><a class="btn list-tr-a">G101</a><span class="caret"></span>
+								</td>
+								<td><a>上海虹桥</a><br clear="none"><a>北京南</a></td>
+								<td><a>06:39</a><br clear="none"><a>12:18</a></td>
+								<td><a>05:49</a><br clear="none"><a>当日到达</a></td>
+								<td><a>12</a><br clear="none"><a>特等座</a></td>
+								<td><a>有</a></td>
+								<td><a>有</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a class="btn btn-info yuding" style="color: white;">预定</a></td>
+							</tr>
+							<tr class="price-tr">
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>￥1748.0</td>
+								<td>￥933.0</td>
+								<td>￥553.0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							</tbody>
+							
+							<tbody>
+								<tr class="list-tr">
+								<td>
+									</div><a class="btn list-tr-a">G101</a><span class="caret"></span>
+								</td>
+								<td><a>上海虹桥</a><br clear="none"><a>北京南</a></td>
+								<td><a>06:39</a><br clear="none"><a>12:18</a></td>
+								<td><a>05:49</a><br clear="none"><a>当日到达</a></td>
+								<td><a>12</a><br clear="none"><a>特等座</a></td>
+								<td><a>有</a></td>
+								<td><a>有</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a class="btn btn-info yuding" style="color: white;">预定</a></td>
+							</tr>
+							<tr class="price-tr">
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>￥1748.0</td>
+								<td>￥933.0</td>
+								<td>￥553.0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							</tbody>
+							
+							<tbody>
+								<tr class="list-tr">
+								<td>
+									</div><a class="btn list-tr-a">G101</a><span class="caret"></span>
+								</td>
+								<td><a>上海虹桥</a><br clear="none"><a>北京南</a></td>
+								<td><a>06:39</a><br clear="none"><a>12:18</a></td>
+								<td><a>05:49</a><br clear="none"><a>当日到达</a></td>
+								<td><a>12</a><br clear="none"><a>特等座</a></td>
+								<td><a>有</a></td>
+								<td><a>有</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a class="btn btn-info yuding" style="color: white;">预定</a></td>
+							</tr>
+							<tr class="price-tr">
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>￥1748.0</td>
+								<td>￥933.0</td>
+								<td>￥553.0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							</tbody>
+							
+							<tbody>
+								<tr class="list-tr">
+								<td>
+									</div><a class="btn list-tr-a">G101</a><span class="caret"></span>
+								</td>
+								<td><a>上海虹桥</a><br clear="none"><a>北京南</a></td>
+								<td><a>06:39</a><br clear="none"><a>12:18</a></td>
+								<td><a>05:49</a><br clear="none"><a>当日到达</a></td>
+								<td><a>12</a><br clear="none"><a>特等座</a></td>
+								<td><a>有</a></td>
+								<td><a>有</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a>-</a></td>
+								<td><a class="btn btn-info yuding" style="color: white;">预定</a></td>
+							</tr>
+							<tr class="price-tr">
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>￥1748.0</td>
+								<td>￥933.0</td>
+								<td>￥553.0</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							</tbody>
+							
+						</table>
+					
+					
+					
+				</ul>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			<div class="xs-list-pattern col-xs-12 hidden-sm hidden-md hidden-lg">
+				<div class="con-xs-list-title col-xs-12">
+					<a class="xs-list-return    glyphicon glyphicon-menu-left" href="goupiao.html"></a>
+					<label>北京</label>
+					<span class="glyphicon glyphicon-random"></span>
+					<label>上海</label>
+				</div>
+				
+				<div class="xs-list-date col-xs-12">
+					<label>2017-07-08</label>
+				</div>
+				
+				<ul class="xs-list-ul">
+					<li>
+						<span></span>
+						<label>G23</label>
+						<span></span>
+						<label>北京</label>
+						<span class="glyphicon glyphicon-arrow-right"></span>
+						<label>上海</label>
+						<span></span>
+						<div class="xs-list-down  glyphicon glyphicon-chevron-down"></div>
+						<div class="xs-list-up  glyphicon glyphicon-chevron-up "style="display: none;"></div>
+						<div class="xs-list-station">
+							<table class="list-station-table">
+											<thead class="list-station-table-thead">
+												<td>站序</td>
+												<td>站名</td>
+												<td>到站时间</td>
+												<td>出发时间</td>
+												<td>停留时间</td>
+											</thead>
+											
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>上海</td>
+													<td>--</td>
+													<td>06:39</td>
+													<td>--</td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>苏州北</td>
+													<td>08:20</td>
+													<td>08:22</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>无锡东</td>
+													<td>09:46</td>
+													<td>09:48</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>南京南</td>
+													<td>10:20</td>
+													<td>10:22</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>05</td>
+													<td>北京南</td>
+													<td>12:18</td>
+													<td>--</td>
+													<td>--</td>
+												</tr>
+											</tbody>
+										</table>
+						</div>
+					</li>
+					<li>
+						<span></span>
+						<label>G23</label>
+						<span></span>
+						<label>北京</label>
+						<span class="glyphicon glyphicon-arrow-right"></span>
+						<label>上海</label>
+						<span></span>
+						<div class="xs-list-down  glyphicon glyphicon-chevron-down"></div>
+						<div class="xs-list-up  glyphicon glyphicon-chevron-up "style="display: none;"></div>
+						<div class="xs-list-station">
+							<table class="list-station-table">
+											<thead class="list-station-table-thead">
+												<td>站序</td>
+												<td>站名</td>
+												<td>到站时间</td>
+												<td>出发时间</td>
+												<td>停留时间</td>
+											</thead>
+											
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>上海</td>
+													<td>--</td>
+													<td>06:39</td>
+													<td>--</td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>苏州北</td>
+													<td>08:20</td>
+													<td>08:22</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>无锡东</td>
+													<td>09:46</td>
+													<td>09:48</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>南京南</td>
+													<td>10:20</td>
+													<td>10:22</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>05</td>
+													<td>北京南</td>
+													<td>12:18</td>
+													<td>--</td>
+													<td>--</td>
+												</tr>
+											</tbody>
+										</table>
+						</div>
+					</li>
+					<li>
+						<span></span>
+						<label>G23</label>
+						<span></span>
+						<label>北京</label>
+						<span class="glyphicon glyphicon-arrow-right"></span>
+						<label>上海</label>
+						<span></span>
+						<div class="xs-list-down  glyphicon glyphicon-chevron-down"></div>
+						<div class="xs-list-up  glyphicon glyphicon-chevron-up "style="display: none;"></div>
+						<div class="xs-list-station">
+							<table class="list-station-table">
+											<thead class="list-station-table-thead">
+												<td>站序</td>
+												<td>站名</td>
+												<td>到站时间</td>
+												<td>出发时间</td>
+												<td>停留时间</td>
+											</thead>
+											
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>上海</td>
+													<td>--</td>
+													<td>06:39</td>
+													<td>--</td>
+												</tr>
+												<tr>
+													<td>02</td>
+													<td>苏州北</td>
+													<td>08:20</td>
+													<td>08:22</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>03</td>
+													<td>无锡东</td>
+													<td>09:46</td>
+													<td>09:48</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>04</td>
+													<td>南京南</td>
+													<td>10:20</td>
+													<td>10:22</td>
+													<td>2分钟</td>
+												</tr>
+												<tr>
+													<td>05</td>
+													<td>北京南</td>
+													<td>12:18</td>
+													<td>--</td>
+													<td>--</td>
+												</tr>
+											</tbody>
+										</table>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			
+			<div class="xs-list-resure col-xs-12 hidden-lg hidden-md hidden-sm">
+				<div class="con-xs-list-title col-xs-12">
+					<a class="xs-list-return    glyphicon glyphicon-menu-left" href="goupiao.html"></a>
+					<label>确认订单</label>
+				</div>
+				
+				<div class="xs-list-date col-xs-12">
+					<label>2017-07-08</label>
+				</div>
+				
+				
+				<div class="xs-list-resure-im   col-xs-12">
+					<div class="xs-resure-chufa col-xs-4">
+						<label>北京</label>
+					</div>
+					<div class="xs-resure-trainNum col-xs-4">
+						<label>G110</label>
+						<div>
+						<span class="glyphicon glyphicon-minus"></span>
+						<span class="glyphicon glyphicon-minus"></span>
+						<span class="glyphicon glyphicon-arrow-right"></span>
+					</div>
+					</div>
+					
+					<div class="xs-resure-mudi col-xs-4">
+						<label>上海</label>
+					</div>
+				</div>
+				
+				<div class="xs-resure-user col-xs-12">
+					<label>程嘉丰</label>
+					<label>18980474069</label>
+				</div>
+				
+				<button class="btn btn-info col-xs-10   xs-resure-tijiao">提交</button>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>

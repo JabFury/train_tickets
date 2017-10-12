@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- 变化  -->
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/login.css" />
+
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-datetimepicker.min.js"></script>
+		<script src="js/style.js"></script>
+	</head>
+	<body>
+		<div id="header" class="hidden-xs">       <!--变化-->
+			<div class="header-logo"><img src="img/logo.png"></div>
+			<div class="header-login-info">
+				<ul class="header-login-info-ul">
+					<li class="header-login-info-ul-li"><a class="btn" href="login.html">登陆</a></li>
+					<li class="header-login-info-ul-li"><a class="btn" href="regist.html">注册</a></li>
+					<li class="xiala-li">
+				<div class="dropdown">
+					<a class="btn" type="button" data-toggle="dropdown">
+						我的12306
+						<span class="caret"></span>
+					</a>
+					
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="imformation.html">已完成的订单</a></li>
+						<li><a href="imformation.html">未完成的订单</a></li>
+						<li class="divider"></li>
+						<li><a href="imformation.html">查看个人信息</a></li>
+						<li><a href="imformation.html">常用联系人</a></li>
+						<li class="divider"></li>
+						<li><a href="imformation.html">重点旅客预约</a></li>
+						<li><a href="imformation.html">遗失物品查找</a></li>
+						<li><a href="imformation.html">投诉</a></li>
+						<li><a href="imformation.html">建议</a></li>
+					</ul>
+				</div>
+					</li>
+				</ul>
+			</div>
+			<div class="header-im-nav">
+				<ul>
+					<li><a class="btn">客运首页</a></li>
+					<li><a class="btn">车票预定</a></li>
+					<li><a class="btn">余票查询</a></li>
+					<li><a class="btn">出行向导</a></li>
+					<li><a class="btn">信息服务</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container center-block">
+			<div class="row hidden-xs">          <!--变化-->
+				<label class="label col-sm-2" style="color: #000000;">当前位置：登陆</label>
+			</div>
+				<div class="login-pattern col-sm-12  hidden-xs">          <!--变化-->
+					<div class="login-left-pattern ">
+						<div class="left-txt col-sm-3">
+							<h5 style="font-weight: bold;">温馨提示：</h6>
+							<p>1、12306.cn网站自3月16日起启用图形验证码</p>
+							<p>2、12306.cn网站每日06:00~23:00提供服务</p>
+							<p>3、在12306.cn网站购票、改签和退票须不晚于开车前30分钟；办理“变更到站”业务时，请不晚于开车前48小时。</p>
+						</div>
+						<table class="login-table col-sm-9 table-condensed">
+							<tr>
+								<td>用户名：</td>
+								<td><input type="text" class="form-control"></td>
+								<td></td>
+							</tr>
+							</tr>
+							<tr>
+								<td>密码：</td>
+								<td><input type="password" class="form-control"></td>
+								<td><a>忘记密码？</a></td>
+							</tr>
+							<tr>
+								<td>验证码：</td>
+								<td><input type="text" class="form-control"></td>
+								<td><div class="login-yzm"><img src="img/login-yzm-1.png"></div></td>
+							</tr>
+						</table>
+						<div class="left-bottom-result">
+							<input type="button" value="登陆" class="login-btn btn btn-warning"/>
+							<input type="button" value="快速注册" class="regist-btn btn btn-default"/>
+						</div>
+						
+					</div>
+					<div class="login-right-pattern ">
+						<ul>
+							<li>
+								<div class="right-img-div"><img src="img/login-right-1.png"></div>
+								车站查询
+							</li>
+							<li>
+								<div class="right-img-div"><img src="img/login-right-2.png"></div>
+								中转查询
+							</li>
+							<li>
+								<div class="right-img-div"><img src="img/login-right-3.png"></div>
+								票价查询
+							</li>
+							<li>
+								<div class="right-img-div"><img src="img/login-right-4.png"></div>
+								正晚点查询
+							</li>
+							<li>
+								<div class="right-img-div"><img src="img/login-right-5.png"></div>
+								客票代售点
+							</li>
+							<li>
+								<div class="right-img-div"><img src="img/login-right-6.png"></div>
+								起售时间
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+			
+			
+			<div class="con-xs-login-pattern col-xs-12 hidden-sm hidden-md hidden-lg">
+				<div class="xs-login-title col-xs-12"><label>登陆12306</label></div>
+				
+				<table class="login-table col-sm-9 table-condensed">
+							<tr>
+								<td>用户名：</td>
+								<td><input type="text" class="form-control"></td>
+								<td></td>
+							</tr>
+							</tr>
+							<tr>
+								<td>密码：</td>
+								<td><input type="password" class="form-control"></td>
+								<td><a>忘记密码？</a></td>
+							</tr>
+							<tr>
+								<td>验证码：</td>
+								<td><input type="text" class="form-control"></td>
+								<td><div class="login-yzm"><img src="img/login-yzm-1.png"></div></td>
+							</tr>
+						</table>
+						
+						<div class="xs-login-checkBox col-xs-12">
+							<span><input type="checkbox" checked/>记住密码</span>
+							<span><input type="checkbox" checked/>自动登录</span>
+						</div>
+						
+						<div class="xs-login-btn col-xs-12">
+							<div class="left-bottom-result">
+								<input type="button" value="登陆" class="login-btn btn btn-info"/>
+								<input type="button" value="快速注册" class="regist-btn btn btn-info"/>
+							</div>
+						</div>
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
